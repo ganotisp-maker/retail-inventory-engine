@@ -76,6 +76,7 @@ if inventory_file:
         # CLEAN COLUMNS
         # =====================================
         raw_df.columns = raw_df.columns.str.strip()
+        st.write(raw_df.columns)
         forecast_df.columns = forecast_df.columns.str.strip()
         procurement_df.columns = procurement_df.columns.str.strip()
         executive_df.columns = executive_df.columns.str.strip()
